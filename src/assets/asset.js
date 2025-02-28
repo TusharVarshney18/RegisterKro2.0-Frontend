@@ -48,7 +48,7 @@ import googleplay from "./googleplay.png"
 import playstore from "./appstore.png"
 import Phone from "./Phone.png"
 import numbers from "./numbers.png"
-import checkbox from "./checkbox.png"
+import checkbox from "./Checkbox.png"
 import Logos2 from "./Logos (1).png"
 import Upbutton from "./Upbtn.png"
 
