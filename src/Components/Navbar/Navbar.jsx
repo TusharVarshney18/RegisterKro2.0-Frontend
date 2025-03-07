@@ -51,14 +51,12 @@ const Navbar = () => {
 
       <div className="navbar-menu">
         {/* left-section */}
-        <div className="left-section">
-          <img
-            src={assets.christmascap}
-            alt="chirstmas-logo"
-            className="minor-logo"
-          />
-          <img src={assets.Logo} alt="Logo" className="Main-logo" />
-        </div>
+        <img
+          src={assets.christmascap}
+          alt="chirstmas-logo"
+          className="minor-logo"
+        />
+        <img src={assets.Logo} alt="Logo" className="Main-logo" />
 
         {/* Hamburger Button */}
         <button className="hamburger" onClick={toggleMenu}>

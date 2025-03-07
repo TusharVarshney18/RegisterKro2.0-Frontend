@@ -1748,10 +1748,6 @@ h2 {
   .faq-heading {
     width: 93%;
   }
-
-  .important-section img {
-    left: 0px;
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -4054,19 +4050,52 @@ h2 {
 /* 
 mobile sizes  */
 @media screen and (max-width: 400px) {
+  .h1-texts {
+    top: 3px;
+    width: 75%;
+  }
+
   .h1-texts h1 {
     font-size: 1.3rem;
+    position: static;
   }
 
   .Group-1000005944 {
     max-width: 90%;
     bottom: -335px;
-    right: 24px;
+    right: 17px;
+  }
+
+  .Group-1000005944 button {
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 8px 16px;
   }
 
   .img-container {
-    top: 467px;
-    right: 6px;
+    top: 506px;
+    right: 1px;
+  }
+
+  .new-task-card {
+    top: 158px;
+    right: 0px;
+    max-width: 150px;
+    width: 25%;
+  }
+
+  .new-task-card button {
+    font-size: 11px;
+  }
+
+  .hr-line {
+    top: 164px;
+  }
+
+  .h1-texts-2 {
+    max-width: 65%;
+    width: 71%;
+    top: 180px;
   }
 
   .group-img {
@@ -4076,8 +4105,18 @@ mobile sizes  */
     right: 6px;
   }
 
+  .Frame-37628 {
+    top: 737px;
+  }
+
+  .Frame-37628 img {
+    position: static;
+    width: 100%;
+    height: 15px;
+  }
+
   .Frame-37628 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     margin-top: 51px;
   }
@@ -4130,7 +4169,7 @@ mobile sizes  */
     max-width: 572px;
     width: 100%;
     height: auto;
-    left: -40px;
+    left: -33px;
     padding: 1px 29px;
     top: 351px;
   }
@@ -4191,15 +4230,20 @@ mobile sizes  */
     font-size: 12px;
   }
 
+  .Act-container {
+    height: auto;
+  }
+
   .Act-container h2 {
     font-size: 20px;
     top: -39px;
   }
 
   .act-cards {
+    left: -5px;
     max-width: 90%;
-    gap: 13px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 37px;
+    grid-template-columns: repeat(1, 360px);
     top: -1px;
   }
 
@@ -4207,8 +4251,24 @@ mobile sizes  */
     font-size: 14px;
   }
 
+  .Coursel-section {
+    top: 448px;
+  }
+
+  .btn14 {
+    left: 4%;
+  }
+
+  .blue-bg-section {
+    overflow: hidden;
+  }
+
   .first-h1 {
     font-size: 24px;
+  }
+
+  .faq-section {
+    top: 448px;
   }
 
   .faq-heading {
@@ -4248,6 +4308,10 @@ mobile sizes  */
     position: relative;
   }
 
+  .service-section {
+    top: 448px;
+  }
+
   .service-section h2 {
     top: 195px;
     left: 16px;
@@ -4264,6 +4328,24 @@ mobile sizes  */
     display: flex;
   }
 
+  .important-section {
+    top: 448px;
+  }
+
+  .search-section {
+    top: 448px;
+  }
+
+  .social-platform {
+    top: 448px;
+
+  }
+
+  .social-platform img {
+    width: 100%;
+    right: 0px;
+  }
+
   .serviceimg-2 {
     width: 63%;
     top: 158px;
@@ -4271,10 +4353,10 @@ mobile sizes  */
   }
 
   .important-section img {
-    max-width: 1280px;
+    max-width: 100%;
     width: 100%;
-    height: auto;
-    left: 1%;
+    height: 40px;
+    left: 0;
   }
 
   .search-section h2 {

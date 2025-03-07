@@ -234,7 +234,7 @@ body {
     background-color: white;
     justify-content: space-between;
     position: fixed;
-    top: 119px;
+    top: 129px;
     height: 400px;
     width: 50%;
     z-index: 1000;
@@ -243,16 +243,33 @@ body {
   .nav-links ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
   }
 
   .nav-links ul a {
-    font-family: "Open Sans";
+    font-family: "Inter", sans-serif; /* Clean and modern font */
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: hsla(218, 17%, 18%, 1);
+    color: #1f2937; /* Darker shade for contrast */
     text-decoration: none;
+    padding: 8px 16px; /* Better spacing */
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 6px; /* Slightly rounded edges for a modern look */
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease,
+      transform 0.2s ease;
+  }
+
+  .nav-links ul a:hover {
+    color: #007bff; /* Blue color on hover */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+    border: 2px solid #007bff; /* Blue border on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   }
 
   .Expert-btn button {
@@ -422,68 +439,88 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .header-nav {
-    max-width: 100%;
-    min-height: 44px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 8px;
-    color: white;
-    background-color: hsla(210, 60%, 27%, 1);
+    overflow: hidden;
   }
 
   .right-section {
+    display: inline-block;
+    padding: 5px;
     position: relative;
-    right: 5px;
+    right: 0px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
+  }
+
+  /* Style navigation links: smaller font and tighter spacing */
+  .nav-item {
+    display: inline flex;
+    position: relative;
+    left: 24px;
+    font-size: 12px;
+    margin-right: 36px;
+  }
+
+  .nav-links {
+    top: 153px;
+  }
+
+  .icon {
+    font-size: 17px;
   }
 
   .Nav-social {
-    width: 50%;
-    display: flex;
+    margin-left: 71px;
+    margin-top: 9px;
+    width: 58%;
+    gap: 27px;
     justify-content: space-between;
-    gap: 8px;
   }
-
   .social-icon {
-    font-size: 14px;
+    font-size: 19px;
   }
 
-  .nav-item {
-    font-size: 12px;
-    margin-right: 3px;
-  }
-
-  .hamburger {
-    right: 8px;
-    font-size: 22px;
-  }
-
-  .vertical-sign {
-    display: none;
-  }
-
+  /* Adjust logos to save space */
   .Main-logo {
     width: 100px;
-    height: auto;
   }
-
   .minor-logo {
     width: 30px;
   }
 
-  .nav-links {
-    width: 100%;
-    height: auto;
+  /* Hide extra elements */
+  .Expert-btn button,
+  .search-icon {
+    display: none;
   }
 
-  .Expert-btn button {
-    display: none; /* Hide on small screens */
+  /* Show hamburger menu if needed */
+  .hamburger {
+    display: block;
+    font-size: 22px;
+    right: 8px;
+  }
+  /* Optionally, adjust the nav-links container if using a hamburger menu */
+  .nav-links {
+    width: 100%;
+    /* Make sure it's set up as a vertical list */
+    flex-direction: column;
+  }
+
+  /* Hide any vertical divider if it crowds the layout */
+  .vertical-sign {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-item {
+    margin-right: 34px;
+    left: 18px;
+  }
+
+  .hamburger {
+    left: 278px;
   }
 }
